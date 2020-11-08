@@ -4,13 +4,13 @@ import { StyleSheet, View } from 'react-native';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 
-import Header from './components/Header';
-import StartGameScreen from './screens/StartGameScreen';
+import Header from './components/Header.component';
+import StartGameScreen from './screens/StartGameScreen.screen';
 import GameScreen from './screens/Game.screen';
 import GameOverScreen from './screens/Gameover.screen';
 
-const fetchFonts = () => {
-  Font.loadAsync({
+const fetchFonts = async () => {
+  await Font.loadAsync({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   });

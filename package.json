@@ -3,6 +3,7 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "android-emulator" : "emulator @Pixel_2_API_30 -dns-server 8.8.8.8",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
